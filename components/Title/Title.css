@@ -1,5 +1,5 @@
 .main-title {
-  padding: 64px 0 24px;
+  padding: 4rem 0 1.5rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -7,7 +7,7 @@
 }
 
 .main-title .title {
-  font-size: 50px;
+  font-size: 3.125rem;
   line-height: 1.15;
   font-weight: 700;
 }
@@ -20,7 +20,7 @@
 }
 
 .main-title .location {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.4;
 }

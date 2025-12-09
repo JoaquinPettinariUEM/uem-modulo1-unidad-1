@@ -11,6 +11,7 @@ function render() {
         </div>
         ${ProjectDonation()}
       </div>
+      ${Recommendations()}
     </article>
   `;
 }

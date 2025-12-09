@@ -11,7 +11,7 @@ body {
 }
 
 body .article {
-  padding: 16px;
+  padding: 1rem;
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -28,12 +28,12 @@ h6 {
 .article .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  column-gap: 24px;
+  column-gap: 1.5rem;
 }
 
 @media (max-width: 750px) {
   .article .grid {
     grid-template-columns: 1fr;
-    row-gap: 24px;
+    row-gap: 1.5rem;
   }
 }

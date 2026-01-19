@@ -24,6 +24,8 @@ Para esta Unidad deberás:
 - Usar Flex o Grid para posicionar los elementos.
 
 ### Trabajo 3:
+
+Para esta Unidad deberás:
 - Gestionar eventos sobre los formularios.
 - Añadir una barra de actualización del mecenazgo, para cuando se haga undonativo se actualice.
 - Añadir un carrusel de imágenes.

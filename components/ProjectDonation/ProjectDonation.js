@@ -10,7 +10,7 @@ function ProjectDonation() {
           <div class="current">
             <div class="icon-container">
               <img src="/images/emblem-urgent-svgrepo-com.svg" alt="Emergency icon" class="icon"/>
-              <span id="target-status-time" class="target-status-time">00:00:00</span>
+              <span id="target-status-time" class="target-status-time">-d -h -m -s</span>
             </div>
             <span id="total-donations" class="actual-donation">$55.232</span>
             <div class="icon-container">

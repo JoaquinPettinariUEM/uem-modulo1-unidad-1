@@ -81,7 +81,7 @@ function setupDonationLogic() {
   const defaultBtn = document.querySelector(".selected");
   const defaultValue = defaultBtn.getAttribute("data-amount");
   const countdownElement = document.getElementById("target-status-time");
-  const targetDate = new Date("February 15, 2026 00:00:00").getTime();
+  const targetDate = new Date("February 30, 2026 00:00:00").getTime();
   input.value = defaultValue;
 
   const countdownInterval = setInterval(() => {
@@ -90,9 +90,15 @@ function setupDonationLogic() {
 
     if (distance <= 0) {
       clearInterval(countdownInterval);
-      countdownElement.textContent = "00:00:00";
+
+      countdownElement.textContent = "TIEMPO ALCANZADO";
+      const icon = document.querySelector(".icon");
+      countdownElement.classList.add("completed");
+      icon.remove();
+
       return;
     }
+
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((distance / (1000 * 60)) % 60);

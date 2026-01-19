@@ -99,10 +99,10 @@ function setupDonationLogic() {
     const seconds = Math.floor((distance / 1000) % 60);
 
     countdownElement.textContent =
-      `${String(days).padStart(2, "0")}: ` +
-      `${String(hours).padStart(2, "0")}:` +
-      `${String(minutes).padStart(2, "0")}:` +
-      `${String(seconds).padStart(2, "0")}`;
+      `${String(days).padStart(2, "0")}d ` +
+      `${String(hours).padStart(2, "0")}h ` +
+      `${String(minutes).padStart(2, "0")}m ` +
+      `${String(seconds).padStart(2, "0")}s`;
   }, 1000);
 
   let total = 55_232;

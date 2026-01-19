@@ -10,7 +10,7 @@ function ProjectDonation() {
           <div class="current">
             <div class="icon-container">
               <img src="/images/emblem-urgent-svgrepo-com.svg" alt="Emergency icon" class="icon"/>
-              <span class="target-status">Necesitamos tu dinero</span>
+              <span id="target-status-time" class="target-status-time">00:00:00</span>
             </div>
             <span id="total-donations" class="actual-donation">$55.232</span>
             <div class="icon-container">
@@ -80,7 +80,30 @@ function setupDonationLogic() {
   const totalDisplay = document.getElementById("total-donations");
   const defaultBtn = document.querySelector(".selected");
   const defaultValue = defaultBtn.getAttribute("data-amount");
+  const countdownElement = document.getElementById("target-status-time");
+  const targetDate = new Date("February 15, 2026 00:00:00").getTime();
   input.value = defaultValue;
+
+  const countdownInterval = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance <= 0) {
+      clearInterval(countdownInterval);
+      countdownElement.textContent = "00:00:00";
+      return;
+    }
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+
+    countdownElement.textContent =
+      `${String(days).padStart(2, "0")}: ` +
+      `${String(hours).padStart(2, "0")}:` +
+      `${String(minutes).padStart(2, "0")}:` +
+      `${String(seconds).padStart(2, "0")}`;
+  }, 1000);
 
   let total = 55_232;
   updateProgress(total);

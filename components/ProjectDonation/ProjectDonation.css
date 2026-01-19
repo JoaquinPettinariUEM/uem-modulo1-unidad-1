@@ -38,7 +38,7 @@
   margin-bottom: 8px;
 }
 
-.project-body .target-status {
+.project-body .target-status-time {
   display: flex;
   width: fit-content;
   color: #ff0000;

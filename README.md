@@ -12,16 +12,22 @@ Existen varios modelos de micromecenazgo, de los cuales destacan principalmente:
 En este tipo de webs generalmente se apoya un proyecto o causa o varias causas, pudiendo un usuario aportar/ donar o incluso proponer un proyecto. 
 A lo largo de este Módulo realizaremos el código para llevar a cabo el front-end de esta aplicación.
 
-### Unidad 1:
+### Trabajo 1:
 
 Para esta Unidad deberás:
 - Realizar la estructura HTML de una página web de micromecenazgo, la temática u objetivo de la recaudación es libre.
 
-### Unidad 2:
+### Trabajo 2:
 
 Para esta Unidad deberás:
 - Realizar el diseño CSS de la página web de micromecenazgo que has empezado a realizar en la unidad anterior.
 - Usar Flex o Grid para posicionar los elementos.
+
+### Trabajo 3:
+- Gestionar eventos sobre los formularios.
+- Añadir una barra de actualización del mecenazgo, para cuando se haga undonativo se actualice.
+- Añadir un carrusel de imágenes.
+- Añadir un reloj en cuenta regresiva para que se vea cuánto queda para finalizar la recaudación.
 
 Link to the Vercel:
 
